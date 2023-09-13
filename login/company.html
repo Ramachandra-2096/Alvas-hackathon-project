@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+    body {
+        background-image: url('../sighnup/sandy-zebua-a7n65pmnJ4Q-unsplash.jpg');
+        background-size: cover;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 30;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .container {
+    
+        background-color: rgba(218, 231, 221, 0.95); 
+        opacity: 0.75;
+        padding: 30px 40px;
+        border-radius: 10px;
+        max-width: 350px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        color: #000000;
+        font-size: 24px; 
+    }
+    
+    input[type="text"],
+    input[type="password"]
+    {
+        width: 90%;
+        padding: 12px; 
+        margin: 10px 0;
+        border: 1px solid #6e6d6d;
+        border-radius: 39px;
+        font-size: 16px;
+    }
+    
+    select{
+        width: 96%;
+        padding: 12px; 
+        margin: 0px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .select-wrapper {
+        position: relative;
+    }
+    
+    .select-wrapper select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 16px;
+    }
+    
+    .select-arrow {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+    
+    input[type="button"] {
+        width: 96%;
+        height: 45px;
+        margin-top: 17px;
+        background: #adb8b4;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, -1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #000000;
+        font-weight: 600;
+        
+    }
+    
+    button:hover {
+        background-color: #0056b3; 
+    }
+    .crop-selection {
+        display: flex;
+        padding: 13px;
+        flex-wrap: wrap; 
+    }
+    
+    .crop-selection label {
+        margin-right: 0px;
+    }
+    
+    .crop-selection input[type="checkbox"] {
+        margin-right: 5px;
+        padding: 15px;
+        margin-bottom: 5px;
+        margin-left: 16px; 
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+            padding: 20px; 
+        }
+    }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h2>Company Login</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                
+                <input type="text" id="login_email" name="email" placeholder="Email" required>
+                            </div>
+            <div class="form-group">
+                
+                <input type="password" id="login_password" name="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="button" id="login" value="Login">
+            </div>
+            <div class="signup">
+                <p>Don't have an account? <a href="../sighnup/signup.html">Sign up</a> </p>
+
+            </div>
+        </form>
+    </div>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyD_EPwAZH5V8yGvPEAal8WEEHUwxZntvUU",
+        authDomain: "alva-ef00f.firebaseapp.com",
+        projectId: "alva-ef00f",
+        storageBucket: "alva-ef00f.appspot.com",
+        messagingSenderId: "855744279932",
+        appId: "1:855744279932:web:a53d434b2b813cfbdaa0f9",
+        measurementId: "G-TQRGE42X64"
+      };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
+    console.log(app);	  
+	  document.getElementById("login").addEventListener("click", function() {
+		  var email =  document.getElementById("login_email").value;
+		  var password = document.getElementById("login_password").value;
+
+		  signInWithEmailAndPassword(auth, email, password)
+		  .then((userCredential) => {
+		    // Signed in 
+		    const user = userCredential.user;
+
+// Set a cookie with the email value
+document.cookie = `email=${email}; expires=Thu, 31 Dec 2099 2:13:59 UTC; path=/`;
+window.location.href = "../land/index.php";
+ // window.location.href = "../dist/index.php";
+
+            
+		  })
+		  .catch((error) => {
+		    const errorCode = error.code;
+		    const errorMessage = error.message;
+		    alert(errorMessage);
+		  });		  		  
+	  });
+    </script>
+</html>
