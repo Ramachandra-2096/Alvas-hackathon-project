@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Signup Page</title>
+
+</head>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <h2>Company</h2>
+        <form id="signupForm" method="POST" action="ssc.php">
+            <input type="text" name="id" placeholder="Company ID" id="id" required>
+            <input type="text" name="fullname" placeholder="Company Name" id="fullname" required>
+            <input type="text" name="contact" placeholder="Contact Person" id="contact" required>
+            <input type="email" name="email" placeholder="Email" id="email" required>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <input type="text" name="phone" placeholder="Phone Number" id="phone" required>
+            <input type="text" name="gst" placeholder="GST Number" id="gst" required>
+            <p>Already have an account? <a href="../login/login.html">Login</a></p>
+            <div><button type="submit" id="register">Sign Up</button></div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyD_EPwAZH5V8yGvPEAal8WEEHUwxZntvUU",
+        authDomain: "alva-ef00f.firebaseapp.com",
+        projectId: "alva-ef00f",
+        storageBucket: "alva-ef00f.appspot.com",
+        messagingSenderId: "855744279932",
+        appId: "1:855744279932:web:a53d434b2b813cfbdaa0f9",
+        measurementId: "G-TQRGE42X64"
+      };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
+    console.log(app);
+
+    
+
+    //----- New Registration code start	  
+    document.getElementById("register").addEventListener("click", function() {
+        var email =  document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        //For new registration
+        createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorMessage);
+          alert(error);
+        });		  		  
+    });
+</script>
+</html>
