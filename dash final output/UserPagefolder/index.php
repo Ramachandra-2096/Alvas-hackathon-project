@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>User</title>
+    <link rel="stylesheet" href="./assets/index-6563b96c.css">
+  </head>
+  <body>
+    <header
+    class=" mm mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16"
+  >
+    <!-- logo - start -->
+    <a
+      href="http://localhost:3000/first/index.html"
+      class="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
+      aria-label="logo"
+    >
+    <img src="./assets/logo-bca06472-bca06472.png" alt="logo"
+    width="100"
+        height="100"
+        viewBox="0 0 100 100"
+        class="h-auto w-12 text-indigo-500"
+        fill="currentColor"
+    >
+      <!-- <svg
+        width="95"
+        height="94"
+        viewBox="0 0 95 94"
+        class="h-auto w-6 text-indigo-500"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      > -->
+        <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+      </svg>
+
+      Farm-all
+    </a>
+    <!-- logo - end -->
+
+    <!-- nav - start -->
+    <nav class="hidden px-2 lg:flex ">
+      <a href="#" class="text-lg px-2 font-semibold text-indigo-500">Home</a>
+      <a
+        href="#"
+        class="text-lg  px-2 font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+        >Features</a
+      >
+      <a
+        href="#"
+        class=" px-2 text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+        >About</a
+      >
+      <a
+        href="#"
+        class="text-lg font-semibold px-2 text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+        >Contact</a
+      >
+    </nav>
+    <!-- nav - end -->
+
+    <!-- buttons - start -->
+    <!-- <a
+      href="#"
+      class="hidden rounded-lg bg-purple-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-black-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block"
+      >Sign Up</a
+    > -->
+
+    <button
+      type="button"
+      class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        />
+      </svg>
+
+      Menu
+    </button>
+    <!-- buttons - end -->
+  </header>
+    <!-- navbar -->
+    <div class="flex overflow-hidden bg-white rounded mx-2">
+      <div class="hidden md:flex md:flex-shrink-0">
+        <div class="flex flex-col w-64">
+          <div
+            class="flex flex-col flex-grow pt-5 overflow-y-auto bg-indigo-700 border-r"
+          >
+            <div class="flex flex-col items-center flex-shrink-0 px-4">
+              <a
+                class="px-8 text-left focus:outline-none"
+                href="http://localhost:3000/first/index.html"
+              >
+                <h2
+                  class="block p-2 text-xl font-medium tracking-tighter text-white transition duration-500 ease-in-out transform cursor-pointer hover:text-white"
+                >
+                Company name
+                </h2>
+              </a>
+              <button
+                class="hidden rounded-lg focus:outline-none focus:shadow-outline"
+              >
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-col flex-grow px-4 mt-5">
+              <nav class="flex-1 space-y-1 bg-indigo-700">
+                <ul>
+                  <li>
+                    <a
+                      class="inline-flex items-center w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform  rounded-lg focus:shadow-outline"
+                      href="http://localhost:3000/land/index.php"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                        ></path>
+                      </svg>
+                      <span class="ml-4"> Dashboard</span>
+                    </a>
+                  </li>
+                
+                <!--  <li>
+
+                    <a
+                      class="inline-flex items-center w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform border-indigo-800 rounded-lg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
+                      href="#"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                        ></path>
+                      </svg>
+                       <span class="ml-4">chat</span> 
+                    </a>
+                  </li>
+                -->
+                  <li>
+                    <a
+                      class="inline-flex items-center bg-indigo-600 w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform border-indigo-800 rounded-lg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
+                      white=""
+                      70=""
+                      href="#"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        ></path>
+                      </svg>
+                      <span class="ml-4">User</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="inline-flex items-center w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform border-indigo-800 rounded-lg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
+                      white=""
+                      70=""
+                      href="#"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        ></path>
+                      </svg>
+                      <span class="ml-4"> Orders</span>
+                    </a>
+                  </li>
+                  <li class="mt-2" >
+                    <!-- <a
+                      class="inline-flex items-center w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform border-indigo-800 rounded-lg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
+                      href="#"
+                    > -->
+                      <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      > -->
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        ></path>
+                      </svg>
+                      <span class=" ml-5 text-slate-50">Crops</span>
+                    </a>
+                  </li>
+                  <!-- <li>
+                    <a
+                      class="inline-flex items-center w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform border-indigo-800 rounded-lg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
+                      href="#"
+                    > -->
+                      <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                      </svg> -->
+                      <!-- <span class="ml-4">checkbox</span></a -->
+                    
+                  <!-- </li> -->
+                  <!-- <li> -->
+                    <!-- <
+                      class="inline-flex items-center w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform border-indigo-800 rounded-lg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
+                      href="#"
+                    > -->
+                      <!-- <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                        ></path>
+                      </svg> 
+                      <span class="ml-4">checkbox</span></a
+                    -->
+                    <!-- checkbox eleement -->
+                    <li>
+                      <div class="flex items-center mt-4 ml-5">
+                        <input  id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white dark:text-white">Wheat</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-center mt-4 ml-5">
+                        <input  id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white dark:text-white">Rice</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-center mt-4 ml-5">
+                        <input  id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white dark:text-white">Potato</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-center mt-4 ml-5">
+                        <input  id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white dark:text-white">Cotton</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-center mt-4 ml-5">
+                        <input  id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white dark:text-white">Tomato</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-center mt-4 ml-5">
+                        <input  id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white dark:text-white">Ragi</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-center mt-4 ml-5">
+                        <input  id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white dark:text-white">Barley</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-center mt-4 ml-5">
+                        <input  id="checked-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checked-checkbox" class="ml-2 text-sm font-medium text-white dark:text-white">Sugarcane</label>
+                      </div>
+                    </li>
+                    <!-- checkbox eleement -->
+                </ul>
+                <!-- <p class="px-4 pt-4 font-medium text-white uppercase">
+                  Shortcuts
+                </p> -->
+                <ul>
+                  <!-- <li>
+                    <a
+                      class="inline-flex items-center w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform border-indigo-800 rounded-lg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
+                      white=""
+                      70=""
+                      href="#"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                        ></path>
+                      </svg>
+                      <span class="ml-4"> Orders</span>
+                    </a>
+                  </li> -->
+                  <!-- <li>
+                    <a
+                      class="inline-flex items-center w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform border-indigo-800 rounded-lg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
+                      white=""
+                      70=""
+                      href="#"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        ></path>
+                      </svg>
+                      <span class="ml-4"> Reports</span>
+                    </a>
+                  </li> -->
+                  <!-- <li>
+                    <a
+                      class="inline-flex items-center w-full px-4 py-2 mt-1 text-base text-white transition duration-500 ease-in-out transform border-indigo-800 rounded-lg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
+                      white=""
+                      70=""
+                      href="#"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
+                        ></path>
+                      </svg>
+                      <span class="ml-4"> Dashboard</span>
+                    </a>
+                  </li> -->
+                </ul>
+              </nav>
+            </div>
+            <!-- <div class="flex flex-shrink-0 p-4 px-4 bg-indigo-600">
+              <a href="#" class="flex-shrink-0 block w-full group">
+                <div class="flex items-center">
+                  <div>
+                    <img
+                      class="inline-block rounded-full h-9 w-9"
+                      src="/assets/images/avatar.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm font-medium text-white">Wicked LAbs</p>
+                  </div>
+                </div>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- ends here -->
+      <div class="flex flex-col flex-1 w-0 overflow-hidden">
+        <main class="relative flex-1 overflow-y-auto focus:outline-none">
+          <div class="py-6">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+              <div>
+                <h1 class="text-2xl flex justify-center" >Welcome !</h1>
+              </div>
+            </div>
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
+                <!-- main content -->
+                <div class="bg-gray-300  rounded-xl  md w-1/4 h-[30vh] mt-5 ">
+                   <div  class=" px-4 py-2 " ><h1 class="text-stone-950 font-semibold">Name : ABCDEFG12</h1></div>
+                   <div  class=" px-4 py-2 " ><h1 class="text-stone-950 font-semibold">Crops : Toddy</h1></div>
+                   <div  class=" px-4 py-2 " ><h1 class="text-stone-950 font-semibold">Land : 3</h1></div>
+                   <div  class=" px-4 py-2 " >
+                    
+                        <form class="flex items-center">   
+                            <label for="simple-search" class="sr-only">Search</label>
+                            <div class="relative w-full">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2"/>
+                                    </svg>
+                                </div>
+                                <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Quantities" >
+                            </div>
+                            <button type="submit" class="p-2.5 ml-2 text-sm font-medium text-white  bg-indigo-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <!-- <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"> -->
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAuklEQVR4nGNgoAYwO/HtldmJb/8h+Otui2NfjEg04OsBhAHf/psd//rP7Pi3VSanvisR64KpKAYgDPppeuLbTINDn0QJuSAbqwFQbHri2zvT49/K7ff/58BqgPnx7w74DIAbdPzbY/MTX9NCV/1nRjHA4NAnUWIMQBj09arZyW+hKIaoNr//j44JGUQ9AwxI9ILZ8W9XTE9+8SE5EM2Of32ENRDNKI1GMyokJIqTMkpmMjn6xZAojdQAAJ4ij37LCeNlAAAAAElFTkSuQmCC" alt="send" class="w-4 h-4" aria-hidden="true" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                </svg>
+                                <span class="sr-only">Search</span>
+                            </button>
+                        </form>
+
+                   </div>
+                  
+                </div>
+              
+              <!-- Do not cross the closing tag underneath this coment -->
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
